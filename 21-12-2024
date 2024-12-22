@@ -1,4 +1,5 @@
-Sum of 2 numbers:
+1.Sum of 2 numbers:
+PROGRAM:
 
 import java.util.Scanner;
 
@@ -18,3 +19,65 @@ public class SumOfTwoNumbers {
     }
 }
 ======================================================
+2.Even or Odd:
+PROGRAM:
+
+import java.util.Scanner;
+
+public class EvenOrOdd {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        if (number % 2 == 0) {
+            System.out.println(number + " is even.");
+        } else {
+            System.out.println(number + " is odd.");
+        }
+    }
+}
+=========================================================
+3.Factorial.
+PROGRAM:
+
+import java.util.Scanner;
+
+public class Factorial {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        int factorial = 1;
+        for (int i = 1; i <= number; i++) {
+            factorial *= i;
+        }
+
+        System.out.println("Factorial of " + number + " is: " + factorial);
+    }
+}
+================================================
+4.Find largest number.
+PROGRAM:
+
+import java.util.Scanner;
+
+public class LargestNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter second number: ");
+        int num2 = scanner.nextInt();
+
+        int largest = (num1 > num2) ? num1 : num2;
+
+        System.out.println("Largest number: " + largest);
+    }
+}
+==============================================================
